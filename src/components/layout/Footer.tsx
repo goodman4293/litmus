@@ -73,9 +73,7 @@ import ExploreImage12 from "../../../public/images/ExploreImage12.png";
 import React, { useState } from "react";
 
 export default function Footer(){
-    const images = [
-        image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32
-      ];
+
     const [content, setContent] = useState(0);
     return(
         <footer className="overflow-auto justify-center bg-green-50 w-full h-auto">
@@ -91,81 +89,23 @@ export default function Footer(){
                     <div className="font-bold pt-5 max-text-lg leading-5 text-[#278A6B]">FAMILY-OWNED FOOD + BEVERAGE MANUFACTURER</div>
                 </div>
                 <div className="max-w-[320px] w-full p-[10px]">
-                    <div className=" font-bold text-5xl text-[#002F2B]">
-                        70%
-                    </div>
-                    <div className="text-black w-full text-base pt-3">
-                        Manual OEE Time Savings
-                    </div>
-                    <div className="font-bold pt-5 max-text-lg leading-5 text-[#278A6B]">
-                        TOP 3 AIRCRAFT ENGINE MANUFACTURER
-                    </div>
+                    <div className=" font-bold text-5xl text-[#002F2B]">70%</div>
+                    <div className="text-black w-full text-base pt-3">Manual OEE Time Savings</div>
+                    <div className="font-bold pt-5 max-text-lg leading-5 text-[#278A6B]">TOP 3 AIRCRAFT ENGINE MANUFACTURER</div>
                 </div>
                 <div className="max-w-[320px] w-full p-[10px]">
-                    <div className=" font-bold text-5xl text-[#002F2B]">
-                        40 Plants
-                    </div>
-                    <div className="text-black text-lg pt-3">
-                    Rapid Deployment
-                    </div>
+                    <div className=" font-bold text-5xl text-[#002F2B]">40 Plants</div>
+                    <div className="text-black text-lg pt-3">Rapid Deployment</div>
                     <Image src={image2} alt="image1" className="w-auto h-auto pt-2" />
                 </div>   
             </div>
             <div className="w-full h-px bg-green-300 font-thin" />
             <div className="w-2/4 items-center h-40 py-10 m-auto">
-                {/* <ImageGallery images={images}  /> */}
-                {/* <Carousel /> */}
-
-                {/* <div id="default-carousel" className="relative w-full" data-carousel="slide">
-                    <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <Image src={image1} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <Image src={image2} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <Image src={image3} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <Image src={image4} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <Image src={image5} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                        </div>
-                    </div>
-                    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                        <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                    </div>
-                    <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                            </svg>
-                            <span className="sr-only">Previous</span>
-                        </span>
-                    </button>
-                    <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                            </svg>
-                            <span className="sr-only">Next</span>
-                        </span>
-                    </button>
-                </div> */}
-
             </div>
             <div className="w-full h-auto justify-center" style={{backgroundColor: "#032125"}}>
                 <div className="w-fit py-10 justify-center m-auto" style={{maxWidth: "1280px"}}>
                     <div className="w-full ">
-                        <div className=" items-center justify-center m-auto w-max text-white text-5xl">
-                            <span className="items-center justify-center m-auto" style={{fontSize: "40px"}}>Future-proof your industrial data strategy today.</span>
-                        </div>
+                        <div className=" items-center justify-center m-auto w-max text-white text-5xl"><span className="items-center justify-center m-auto" style={{fontSize: "40px"}}>Future-proof your industrial data strategy today.</span></div>
                     </div>
                     <div className="items-center justify-center flex gap-2 m-auto mt-10">
                         <div className="flex gap-1">
@@ -241,12 +181,8 @@ export default function Footer(){
             </div>
                 
             <div className=" m-auto gap-y-20 pt-10" style={{width: "fit-content"}}>
-                <div className="text-4xl text-center " style={{color: "#032125"}}>
-                    What makes Litmus different?
-                </div>
-                <div className="my-8 m-auto text-center" style={{ fontSize: "16px", color: "#002F2B"}}>
-                    Connect the dots with a centralized software platform for industrial data that’s built for everyone.
-                </div>
+                <div className="text-4xl text-center " style={{color: "#032125"}}>What makes Litmus different?</div>
+                <div className="my-8 m-auto text-center" style={{ fontSize: "16px", color: "#002F2B"}}>Connect the dots with a centralized software platform for industrial data that`&apos`s built for everyone.</div>
                 <div className="w-4/5 flex gap-16 items-center m-auto py-24 justify-center">
                     <div className="justify-center w-1/2">
                         <div className="leading-9" style={{fontSize: "29px", color: "#002F2B"}}>Imagine data connectivity faster than ever before.</div>
@@ -346,26 +282,18 @@ export default function Footer(){
                     <div className="max-w-[1280px] flex gap-2 h-auto p-[35px] items-center justify-center m-auto">
                         <div className="w-1/2 items-center justify-start h-full">
                             <div className="bg-white max-w-[480px] p-[40px] h-auto items-center">
-                                <div className="text-[27px] text-[Space Grotesk] text-[#0D0925]">
-                                    Be disruptive - without disrupting business operations. Start today.
-                                </div>
-                                <div className="text-[16px] text-[Space Grotesk] text-[#4E4A67]">
-                                    Learn how Litmus can help you securely and scalably do more with your industrial data.
-                                </div>
+                                <div className="text-[27px] text-[Space Grotesk] text-[#0D0925]">Be disruptive - without disrupting business operations. Start today.</div>
+                                <div className="text-[16px] text-[Space Grotesk] text-[#4E4A67]">Learn how Litmus can help you securely and scalably do more with your industrial data.</div>
                             </div>
                         </div>
                         <div className="w-1/2 items-center justify-start h-auto">
-                            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
-                                Email
-                            </label>
+                            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
                             <input
                                 type="email"
                                 className=" email appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 placeholder="Enter your email"
                             />
-                            <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2 mt-4">
-                                Message
-                            </label>
+                            <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2 mt-4">Message</label>
                             <textarea
                                 className="email appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 placeholder="Enter your message"

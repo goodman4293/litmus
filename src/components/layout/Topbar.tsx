@@ -252,9 +252,7 @@ export default function Topbar(){
               </div>
             </Dropdown>
             
-            <div className='w-auto h-full rounded-[26px] text-1xl text-white py-[13.5px] px-[49px] text-[16px] font-[Space Grotesk] font-bold bg-[#002F2B] cursor-pointer'>
-              <div>Schedule a Demo</div>
-            </div>
+            <div className='w-auto h-full rounded-[26px] text-1xl text-white py-[13.5px] px-[49px] text-[16px] font-[Space Grotesk] font-bold bg-[#002F2B] cursor-pointer'>Schedule a Demo</div>
           </div>
         </div>
         
