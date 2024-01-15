@@ -1,0 +1,46 @@
+.demoButton:hover {
+    background-color: rgb(66, 228, 174);
+}
+
+.exploreButton:hover {
+    background-color: white;
+    color: rgb(66, 228, 174);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.Adobeimage:hover{
+    color: rgb(66, 228, 174);
+}
+
+.FooterText:hover{
+    color: rgb(242, 248, 246);
+}
+
+.FooterButton:hover{
+    background-color: white;
+    color: rgb(66, 228, 174);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 23%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.email:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.email:focus{
+    background-color: rgb(229, 229, 229);
+}
